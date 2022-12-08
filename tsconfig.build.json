@@ -1,0 +1,11 @@
+/*
+  Created so we can still have type checks for test files in development phase
+  but exclude them for build phase by instructing tsc to use this file.
+*/
+{
+  "extends": "./tsconfig.json",
+  "exclude": [
+    "src/**/*.spec.ts",
+    "jest.config.ts"
+  ]
+}
